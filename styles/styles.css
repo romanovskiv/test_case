@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  border: 0.3px solid #828282;
+  border-radius: 16px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_photo {
+  width: 100%;
+  min-height: 220px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.pseudo {
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  padding: 8px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 5%;
+  left: 0;
+  color: #3e3e3e;
+}
+
+.pseudo1::before {
+  content: 'новинка';
+  background: #fed74b;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  padding: 8px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 5%;
+  left: 0;
+  color: #3e3e3e;
+}
+.pseudo2::before {
+  content: 'новинка';
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  padding: 8px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  background: #7553ff;
+  color: #fff;
+  border-radius: 15px 0px 12px;
+}
+.pseudo3::before {
+  content: 'новинка';
+  background: #099ce8;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  padding: 8px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 5%;
+  left: 0;
+  color: #fff;
+}
+.pseudo4::before {
+  content: 'круглый год';
+  background: #fed74b;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  padding: 8px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  top: 5%;
+  left: 0;
+  color: #3e3e3e;
+}
+
+.info-wrap {
+  padding: 12px;
+}
+
+.info_duration {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
+.info_title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.info_list {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.list_item {
+  color: #4b4b4b;
+  padding-left: 20px;
+  width: 100%;
+  display: block;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 36px;
+  gap: 6px;
+  margin-top: 7px;
+  margin-bottom: 35px;
+}
+
+.option {
+  padding: 2px 14px;
+  background: #d9e8ff;
+  border-radius: 11px;
+  color: #343434;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #6ba6ff;
+  color: #fff;
+}
+
+.price-big {
+  font-size: 30px;
+}
+
+.price-small {
+  font-size: 10px;
+}
+
+.btn {
+  background: #fed74b;
+  border: 0.5px solid #cba500;
+  border-radius: 20px;
+  color: #404040;
+  text-decoration: none;
+  padding: 12px 44px;
+}
+
+.info_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+li::marker {
+  content: url(../assets/img/check-mark.svg);
+  padding-right: 20px;
+}
+
+.test {
+  background: url(../assets/img/music\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 730px) {
+  section {
+    margin-top: 65px;
+  }
+  .card {
+    display: flex;
+    max-width: 1100px;
+    gap: 23px;
+    flex-direction: row;
+    margin-bottom: 65px;
+    margin-top: 0;
+  }
+  .card_photo {
+    max-width: 44.2%;
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .title_wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6px;
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    max-width: 535px;
+  }
+
+  .info_footer {
+    justify-content: start;
+    gap: 12px;
+  }
+  .info_duration {
+    font-size: 14px;
+  }
+
+  .list_item {
+    font-size: 18px;
+  }
+
+  .price-big {
+    font-size: 36px;
+    margin-bottom: 2px;
+  }
+
+  .price-small {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .option {
+    font-size: 16px;
+  }
+  .options {
+    justify-content: flex-end;
+  }
+
+  .pseudo1::before,
+  .pseudo2::before,
+  .pseudo3::before,
+  .pseudo4::before {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pseudo1::before,
+  .pseudo3::before,
+  .pseudo4::before {
+    top: 10%;
+  }
+}
